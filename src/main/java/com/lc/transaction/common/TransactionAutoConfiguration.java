@@ -3,8 +3,6 @@ package com.lc.transaction.common;
 import com.lc.transaction.config.TransactionConfig;
 import com.lc.transaction.processor.ListenEvent;
 import com.lc.transaction.processor.SendEvent;
-import com.lc.transaction.service.ConfigService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
