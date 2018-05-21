@@ -7,6 +7,7 @@
 * 需要有kafka服务、redis服务
 
 ##  1、需要在你的项目中写一个启动器，用来配置你的自定义事务主题与对应的事务处理实例 以下是一个例子：
+
 @Component
 @Order
 public class TransactionHandleRegister extends TransactionHandleRegisterImpl implements ApplicationRunner {
@@ -20,8 +21,8 @@ public class TransactionHandleRegister extends TransactionHandleRegisterImpl imp
 }
 
 ##  2、需要在你的项目中写一个事务处理器来处理实际的事务 以下是一个例子：
-public class Test extends TransactionService {
 
+public class Test extends TransactionService {
     @Override
     public DistributionTaskInvoke exec(Object... objects) throws Exception {
         DistributionTaskInvoke rlt = new DistributionTaskInvoke();
